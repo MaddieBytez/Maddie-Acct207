@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Maddie’s Accounting Class</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #007a99;
+      margin: 0;
+      padding: 2rem;
+      color: white;
+    }
+    h1 {
+      color: white;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #00ccff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: .5rem 0;
+    }
+    a {
+      color: black;
+      font-weight: bold;
+      background: #00ccff;
+      padding: .4rem .8rem;
+      border-radius: .4rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    a:hover {
+      background: #005f6b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Maddie’s Accounting Class</h1>
+  <p>Welcome! Pick a lesson below:</p>
+
+  <h2>Homework</h2>
+  <ul>
+    <li><a href="week1/Acct207_Week1_Homework_Sidebar_Styled.html">Week 1 Homework</a></li>
+    <!-- Add Week 2, Week 3, etc. -->
+  </ul>
+
+  <h2>Quizzes</h2>
+  <ul>
+    <li><a href="quizzes/Acct207_Week1_Quiz.html">Week 1 Quiz (example link)</a></li>
+    <!-- Add more quizzes as needed -->
+  </ul>
+</body>
+</html>
