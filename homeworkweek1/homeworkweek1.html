@@ -40,22 +40,17 @@
     }
     /* Content */
 
-    .slides-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 ratio */
-      height: 0;
-      overflow: hidden;
-      border-radius: 8px;
+    .slide-center {
+    display: flex;
+    justify-content: center;   /* center the iframe */
    }
 
-   .slides-container iframe {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 85%;
-     height: 85%;
-     border: 0;
-   }
+   .slide-center iframe {
+   width: 90%;                /* a little smaller than the card */
+   max-width: 900px;          /* cap it on big screens */
+   aspect-ratio: 16 / 9;      /* auto height based on width */
+   border: 0;
+  }
     .content {
       margin-left: 240px;
       padding: 20px;
@@ -96,16 +91,15 @@
 
   <div class="card">
   <h2>Lesson Slides</h2>
-  <div style="text-align: center;">
-    <iframe 
-      src="https://docs.google.com/presentation/d/e/2PACX-1vTSrHhKKzSZKYabq7eFvmQpJgNo0wT0IotoHTZuSd6uTo3jAVLzrCB43KP6kkdjMgehVWn5lg8LWyTX/pubembed?start=true&loop=false&delayms=60000" 
-      frameborder="0"  
-      allowfullscreen="true" 
-      mozallowfullscreen="true" 
-      webkitallowfullscreen="true">
+  <div class="slide-center">
+    <iframe
+      src="https://docs.google.com/presentation/d/e/2PACX-1vTSrHhKKzSZKYabq7eFvmQpJgNo0wT0IotoHTZuSd6uTo3jAVLzrCB43KP6kkdjMgehVWn5lg8LWyTX/pubembed?start=true&loop=false&delayms=60000"
+      allowfullscreen
+      mozallowfullscreen
+      webkitallowfullscreen>
     </iframe>
-    </div>
-    </div>
+  </div>
+  </div>
     
     <div id="q1" class="card">
       <h3>Question 1</h3>
