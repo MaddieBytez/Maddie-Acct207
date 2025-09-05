@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acct207: Week 2 Homework</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #007a99;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #00ccff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #007a99;
+      color: white;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    /* Content */
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .card img {
+      display: block;
+      margin: 0 0 20px; /* left aligned, with space below */
+      max-width: 100%;  /* keep original size */
+      height: auto;
+      border-radius: 8px;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Week 2 Homework</h2>
+    <a href="#q1">Question 1</a>
+    <a href="#q2">Question 2</a>
+    <a href="#q3">Question 3</a>
+    <a href="#q4">Question 4</a>
+    <a href="../index.html">Back to Acct207</a>
+    <a href="https://maddiebytez.github.io/Maddie-Courses/">Back to Course Hub</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div id="q1" class="card">
+      <h3>Question 1</h3>
+      <img src="Screenshot_Question1.png" alt="Question 1 Screenshot">
+    </div>
+
+    <div id="q2" class="card">
+      <h3>Question 2</h3>
+      <img src="Screenshot_Question2a.png" alt="Question 2 Screenshot 1">
+      <img src="Screenshot_Question2b.png" alt="Question 2 Screenshot 2">
+    </div>
+
+    <div id="q3" class="card">
+      <h3>Question 3</h3>
+      <img src="Screenshot_Question3a.png" alt="Question 3 Screenshot 1">
+      <img src="Screenshot_Question3b.png" alt="Question 3 Screenshot 2">
+    </div>
+
+    <div id="q4" class="card">
+      <h3>Question 4</h3>
+      <img src="Screenshot_Question4a.png" alt="Question 4 Screenshot 1">
+      <img src="Screenshot_Question4b.png" alt="Question 4 Screenshot 2">
+      <img src="Screenshot_Question4c.png" alt="Question 4 Screenshot 3">
+      <img src="Screenshot_Question4d.png" alt="Question 4 Screenshot 4">
+      <img src="Screenshot_Question4e.png" alt="Question 4 Screenshot 5">
+
+    </div>
+  </div>
+</body>
+</html>
