@@ -1,59 +1,136 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Maddie’s Accounting Class</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      background: #007a99;
       margin: 0;
-      padding: 2rem;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #007a99, #00ccff);
       color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      width: 100%;
     }
     h1 {
-      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 600;
     }
-    h2 {
-      margin-top: 2rem;
-      color: #00ccff;
+    .card {
+      background: white;
+      color: black;
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #003366;
+    }
+    .card h3 {
+      margin-top: 20px;
+      color: #007a99;
+    }
+    .card p {
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+    .card strong {
+      color: #007a99;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .links a {
+      background: #00ccff;
+      color: black;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .links a:hover {
+      background: #007a99;
+      color: white;
     }
     ul {
-      list-style: none;
-      padding: 0;
+      padding-left: 20px;
     }
-    li {
-      margin: .5rem 0;
-    }
-    a {
-      color: black;
-      font-weight: bold;
-      background: #00ccff;
-      padding: .4rem .8rem;
-      border-radius: .4rem;
-      text-decoration: none;
-      display: inline-block;
-    }
-    a:hover {
-      background: #005f6b;
-      color: white;
+    ul li {
+      margin: 6px 0;
     }
   </style>
 </head>
 <body>
-  <h1>📘 Maddie’s Accounting Class</h1>
-  <p>Welcome! Pick a lesson below:</p>
+  <div class="container">
+    <h1>📘 Maddie’s Accounting Class</h1>
 
-  <h2>Homework</h2>
-  <ul>
-    <li><a href="week1/Acct207_Week1_Homework_Q1_Q5.html">Week 1 Homework</a></li>
-    <!-- Add Week 2, Week 3, etc. -->
-  </ul>
+    <!-- Homework Card -->
+    <div class="card">
+      <h2>Homework</h2>
+      <div class="links">
+        <a href="week1/Acct207_Week1_Homework_Q1_Q5.html">Week 1</a>
+        <a href="#">Week 2</a>
+        <a href="#">Week 3</a>
+      </div>
+    </div>
 
-  <h2>Quizzes</h2>
-  <ul>
-    <li><a href="quizzes/Acct207_Week1_Quiz.html">Week 1 Quiz (example link)</a></li>
-    <!-- Add more quizzes as needed -->
-  </ul>
+    <!-- Quizzes Card -->
+    <div class="card">
+      <h2>Quizzes</h2>
+      <div class="links">
+        <a href="#">Quiz 1</a>
+        <a href="#">Quiz 2</a>
+      </div>
+    </div>
+
+    <!-- Syllabus Card -->
+    <div class="card">
+      <h2>Course Information</h2>
+      <p><strong>Name:</strong> Fundamentals of Accounting</p>
+      <p><strong>Code:</strong> ACCT207</p>
+      <p><strong>Description:</strong> This course covers accounting from the user perspective through the introduction of financial statements and the examination of the interrelationships among them. Through real-world business examples, students examine key accounting topics including receivables, inventory, plant assets, liabilities, and stock transactions (and the effects on the financial statements). Financial statement analysis is presented through the evaluation of the profitability, liquidity, and solvency of businesses.
+      <p><strong>Prerequisites:</strong> N/A</p>
+
+      <h3>Your Instructor</h3>
+      <p><strong>Bruce Cranendonk</strong></p>
+      <p>I hold the degrees of BS of Accountancy, Masters of International Management (Finance Concentration), and Masters of Business Administration (Finance Concentration). I also am a licensed CPA and have CGMA (Certified Global Management Accountant) certification and have previously held CFF (Certified in Financial Forensics) designation. I spent ~15 years with Intel Corporation in several roles. My final role as Global Cost & Inventory Controller and Chair of the Accounting Policy Board. I left Intel to move back east, which is where I am from. I took a position with a Deloitte spin off called RGP, Inc. (Resources Global Professionals) a consulting company to Fortune 100 & International companies. I have been with them for 10 years. In the course of my career I have written and delivered approximately six accounting and finance courses for internal training. Teaching has always been a passion of mine. "Education is our passport to the future, for tomorrow belongs to the people who prepare for it today." –Malcolm X
+
+      <h3>Course Materials</h3>
+      <p><em>Survey of Accounting</em>, 3rd Edition<br>
+      Paul D. Kimmel, Jerry J. Weygandt, Jill E. Mitchell<br>
+      © 2022 Wiley</p>
+
+      <h3>Course Objectives</h3>
+      <ul>
+        <li><strong>Weeks 1 and 8:</strong> Identify the key financial statements and their components and analyze the financial performance of a company through various financial statement analysis techniques.</li>
+        <li><strong>Week 2:</strong> Analyze business transactions within the framework of the accounting equation contributed capital (stocks).</li>
+        <li><strong>Week 3:</strong> Analyze business transactions within the framework of the accounting equation related to current assets.</li>
+        <li><strong>Week 4:</strong> Analyze business transactions within the framework of the accounting equation related to long-lived assets.</li>
+        <li><strong>Week 5:</strong> Analyze business transactions within the framework of the accounting equation related to liabilities.</li>
+        <li><strong>Week 6:</strong> Analyze business transactions within the framework of the accounting equation earned capital (revenue and expenses).</li>
+        <li><strong>Week 7:</strong> Analyze the effects of merchandising and inventory transactions on the financial statements of a company.</li>
+        <li><strong>Week 8:</strong> Analyze business performance using financial statement ratios.</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
