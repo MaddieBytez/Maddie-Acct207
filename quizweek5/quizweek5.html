@@ -59,6 +59,56 @@
       height: auto;
       border-radius: 8px;
     }
+    .nav-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-card span {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-card a {
+  text-decoration: none;
+  background: transparent; /* inactive buttons blend in */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 6px; /* add spacing between buttons */
+  transition: background 0.2s ease;
+}
+
+.nav-card a:hover {
+  background: rgba(0, 204, 255, 0.3); /* subtle hover for inactive */
+}
+
+.nav-card a.active {
+  background: #00ccff; /* bright blue for active */
+  color: black; /* better contrast */
+}
+
+.footer-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75); /* softer white */
+  margin: 0;
+  padding: 10px 0;
+}
   </style>
 </head>
 <body>
@@ -129,6 +179,24 @@
       <h3>Question 10</h3>
       <img src="Screenshot_Question10.png" alt="Question 10 Screenshot">
     </div>
+        <div class="card nav-card">
+    <div class="nav-row">
+    <span>Homework:</span>
+    <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
+    </div>
+    <div class="nav-row"> 
+    <span>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+    </div>
+    <div class="nav-row"> 
+    <span>‎Quiz:</span>
+    <a href="../quizweek1/quizweek1.html">1</a><a href="../quizweek2/quizweek2.html">2</a><a href="../quizweek3/quizweek3.html">3</a><a href="../quizweek4/quizweek4.html">4</a><a href="../quizweek5/quizweek5.html" class="active">5</a><a href="../quizweek6/quizweek6.html">6</a><a href="../quizweek7/quizweek7.html">7</a><a href="../quizweek8/quizweek8.html">8</a>
+    </div>
+    </div>
+    
+    <div class="card footer-card">
+  <p>Custom portal layout © 2025 Maddie. Course content © DeVry / Wiley.</p>
+    </div>
   </div>
 </body>
 </html>
+
