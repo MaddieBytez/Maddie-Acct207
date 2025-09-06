@@ -74,7 +74,6 @@
 </head>
 <body>
   <!-- Sidebar -->
-  <div id="navbar-placeholder"></div>
   <div class="sidebar">
     <h2>Week 1 Homework</h2>
     <a href="#ls">Lesson Slides</a>
@@ -136,16 +135,5 @@
       <img src="Screenshot_Question5d.png" alt="Question 5 Screenshot 4">
     </div>
   </div>
-  <div id="footer-placeholder"></div>
-<script>
-  fetch("../shared/layout.html")
-    .then(r => r.text())
-    .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, "text/html");
-      document.getElementById("navbar-placeholder").innerHTML = doc.querySelector("#navbar").innerHTML;
-      document.getElementById("footer-placeholder").innerHTML = doc.querySelector("#footer").innerHTML;
-    });
-</script>
 </body>
 </html>
