@@ -70,29 +70,54 @@
       height: auto;
       border-radius: 8px;
     }
-    .nav-card, .footer-card {
+    .nav-card {
   background: transparent;
   box-shadow: none;
   border: none;
   text-align: center;
-  color: white;
+  margin-bottom: 20px;
+}
+
+.nav-card span {
+  display: inline-block;
+  margin-right: 8px;
   font-weight: 600;
+  color: #fff;
 }
 
 .nav-card a {
-  color: #00ccff;
-  margin: 0 5px;
   text-decoration: none;
+  background: rgba(0, 204, 255, 0.9);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 4px;
+  transition: background 0.2s ease;
 }
 
 .nav-card a:hover {
-  color: #007a99;
+  background: rgba(0, 122, 153, 0.9);
+}
+
+.nav-card a.active {
+  background: #007a99;
+}
+
+.footer-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .footer-card p {
   font-size: 0.85rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.75); /* softer white */
   margin: 0;
+  padding: 10px 0;
 }
   </style>
 </head>
@@ -117,7 +142,7 @@
     <div class="card nav-card">
   <div class="nav-row">
     <span>Homework:</span>
-    <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
+    <a href="../homeworkweek1/homeworkweek1.html" class="active">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
   </div>
   <div class="nav-row">
     <span>Quiz:</span>
