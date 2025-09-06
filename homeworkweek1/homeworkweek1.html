@@ -87,22 +87,23 @@
 
 .nav-card a {
   text-decoration: none;
-  background: rgba(0, 204, 255, 0.9);
+  background: transparent; /* inactive buttons blend in */
   color: white;
-  padding: 6px 10px;
+  padding: 6px 12px;
   border-radius: 5px;
   font-size: 0.9rem;
   font-weight: 600;
-  margin: 0 4px;
+  margin: 0 6px; /* add spacing between buttons */
   transition: background 0.2s ease;
 }
 
 .nav-card a:hover {
-  background: rgba(0, 122, 153, 0.9);
+  background: rgba(0, 204, 255, 0.3); /* subtle hover for inactive */
 }
 
 .nav-card a.active {
-  background: #007a99;
+  background: #00ccff; /* bright blue for active */
+  color: black; /* better contrast */
 }
 
 .footer-card {
