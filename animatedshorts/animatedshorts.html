@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acct207: Animated Shorts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #007a99;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #00ccff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #007a99;
+      color: white;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    /* Content */
+
+    .slide-center {
+    display: flex;
+    justify-content: center;   /* center the iframe */
+   }
+
+   .slide-center iframe {
+   width: 85%;                /* a little smaller than the card */
+   max-width: 85%;          /* cap it on big screens */
+   aspect-ratio: 16 / 9;      /* auto height based on width */
+   border: 0;
+  }
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .card img {
+      display: block;
+      margin: 0 0 20px; /* left aligned, with space below */
+      max-width: 100%;  /* keep original size */
+      height: auto;
+      border-radius: 8px;
+    }
+    .nav-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-card span {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-card a {
+  text-decoration: none;
+  background: transparent; /* inactive buttons blend in */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 6px; /* add spacing between buttons */
+  transition: background 0.2s ease;
+}
+
+.nav-card a:hover {
+  background: rgba(0, 204, 255, 0.3); /* subtle hover for inactive */
+}
+
+.nav-card a.active {
+  background: #00ccff; /* bright blue for active */
+  color: black; /* better contrast */
+}
+
+.footer-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75); /* softer white */
+  margin: 0;
+  padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Animated Shorts</h2>
+    <a href="#as1">Chapter 3 - Accounting Animated Shorts: The Accounting Equation</a>
+    <a href="#as2">Chapter 6 - Accounting Animated Shorts: Cost of Goods Sold</a>
+    <a href="#as3">Chapter 9 - Accounting Animated Shorts: Payroll Deductions</a>
+    <a href="../index.html">Back to Acct207</a>
+    <a href="https://maddiebytez.github.io/Maddie-Courses/">Back to Course Hub</a>
+  </div>
+
+  <!-- Main Content -->
+  
+  <div class="content">
+
+ 
+  <div id="as1" class="card"> 
+  <h2>Chapter 3 - Accounting Animated Shorts: The Accounting Equation</h2> 
+
+  <iframe src="https://drive.google.com/file/d/1olEYXx1w2zC1LM8jgoU1VebztQ_rNuKQ/preview" 
+          width="1200" height="675" allow="autoplay"></iframe>
+
+  </div>
+
+  <div id="as2" class="card"> 
+  <h2>Chapter 6 - Accounting Animated Shorts: Cost of Goods Sold</h2> 
+
+  <iframe src="https://drive.google.com/file/d/1jpz4YHRG_72IdRfmdzVxqFglG4N5YeqF/preview" 
+          width="1200" height="675" allow="autoplay"></iframe>
+
+  </div>
+
+  <div id="as3" class="card"> 
+  <h2>Chapter 9 - Accounting Animated Shorts: Payroll Deductions</h2> 
+
+  <iframe src="https://drive.google.com/file/d/1NYnwmIHBAoobXpQSNDM1s2kwpuqWwQuF/preview" 
+          width="1200" height="675" allow="autoplay"></iframe>
+
+  </div>
+        <div class="card nav-card">
+    <div class="nav-row">
+    <span>Homework:</span>
+    <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
+    </div>
+    <div class="nav-row"> 
+    <span>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+    </div>
+    <div class="nav-row"> 
+    <span>‎Quiz:</span>
+    <a href="../quizweek1/quizweek1.html">1</a><a href="../quizweek2/quizweek2.html">2</a><a href="../quizweek3/quizweek3.html">3</a><a href="../quizweek4/quizweek4.html">4</a><a href="../quizweek5/quizweek5.html">5</a><a href="../quizweek6/quizweek6.html">6</a><a href="../quizweek7/quizweek7.html">7</a><a href="../quizweek8/quizweek8.html">8</a>
+    </div>
+    </div>
+    
+    <div class="card footer-card">
+  <p>Custom portal layout © 2025 Maddie. Course content © DeVry / Wiley.</p>
+    </div>
+  </div>
+</body>
+</html>
