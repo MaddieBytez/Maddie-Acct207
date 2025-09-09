@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acct207: Crossword Puzzles</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #007a99;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 280px;
+      background-color: #00ccff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #007a99;
+      color: white;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    /* Content */
+
+    .slide-center {
+    display: flex;
+    justify-content: center;   /* center the iframe */
+   }
+
+   .slide-center iframe {
+   width: 85%;                /* a little smaller than the card */
+   max-width: 85%;          /* cap it on big screens */
+   aspect-ratio: 16 / 9;      /* auto height based on width */
+   border: 0;
+  }
+    .content {
+      margin-left: 310px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .card img {
+      display: block;
+      margin: 0 0 20px; /* left aligned, with space below */
+      max-width: 100%;  /* keep original size */
+      height: auto;
+      border-radius: 8px;
+    }
+
+.crossword img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 8px;
+}
+
+.crossword button {
+  display: block;
+  margin: 15px auto 0;
+  background: #00ccff;
+  border: none;
+  color: black;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.crossword button:hover {
+  background: #007a99;
+  color: white;
+}
+
+.btn-group {
+  margin-top: 10px;
+}
+
+.btn-group button,
+.btn-group a {
+  background: #00ccff;
+  color: black;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-group button:hover,
+.btn-group a:hover {
+  background: #007a99;
+  color: white;
+}
+
+    .nav-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-card span {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-card a {
+  text-decoration: none;
+  background: transparent; /* inactive buttons blend in */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 6px; /* add spacing between buttons */
+  transition: background 0.2s ease;
+}
+
+.nav-card a:hover {
+  background: rgba(0, 204, 255, 0.3); /* subtle hover for inactive */
+}
+
+.nav-card a.active {
+  background: #00ccff; /* bright blue for active */
+  color: black; /* better contrast */
+}
+
+.footer-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75); /* softer white */
+  margin: 0;
+  padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Crossword Puzzles</h2>
+    <a href="#cw1_a">Ch 1: Crossword Puzzles, Part 1</a>
+    <a href="#cw1_b">Ch 1: Crossword Puzzles, Part 2</a>
+    <a href="#cw2">Ch 2: Crossword Puzzles</a>
+    <a href="#cw3">Ch 3: Crossword Puzzles</a>
+    <a href="#cw4_a">Ch 4: Crossword Puzzles, Part 1</a>
+    <a href="#cw4_b">Ch 4: Crossword Puzzles, Part 2</a>
+    <a href="#cw5_a">Ch 5: Crossword Puzzles, Part 1</a>
+    <a href="#cw5_b">Ch 5: Crossword Puzzles, Part 2</a>
+    <a href="#cw6_a">Ch 6: Crossword Puzzles, Part 1</a>
+    <a href="#cw6_b">Ch 6: Crossword Puzzles, Part 2</a>
+    <a href="#cw7">Ch 7: Crossword Puzzles</a>
+    <a href="#cw8_a">Ch 8: Crossword Puzzles, Part 1</a>
+    <a href="#cw8_b">Ch 8: Crossword Puzzles, Part 2</a>
+    <a href="#cw9_a">Ch 9: Crossword Puzzles, Part 1</a>
+    <a href="#cw9_b">Ch 9: Crossword Puzzles, Part 2</a>
+    <a href="#cw9_c">Ch 9: Crossword Puzzles, Part 3</a>
+    <a href="#cw10_a">Ch 10: Crossword Puzzles, Part 1</a>
+    <a href="#cw10_b">Ch 10: Crossword Puzzles, Part 2</a>
+    <a href="#cw11_a">Ch 11: Crossword Puzzles, Part 1</a>
+    <a href="#cw11_b">Ch 11: Crossword Puzzles, Part 2</a>
+    <a href="#cw12">Ch 12: Crossword Puzzles</a>
+    <a href="#cw13">Ch 13: Crossword Puzzles</a>
+    <a href="#cw14">Ch 14: Crossword Puzzles</a>
+    <a href="#cw15">Ch 15: Crossword Puzzles</a>
+    <a href="#cw16">Ch 16: Crossword Puzzles</a>
+    <a href="#cw17">Ch 17: Crossword Puzzles</a>
+    <a href="#cw18">Ch 18: Crossword Puzzles</a>
+    <a href="#cw19">Ch 19: Crossword Puzzles</a>
+    <a href="#cwAppD">App D: Crossword Puzzles</a>
+    <a href="#cwAppE">App E: Crossword Puzzles</a>
+    <a href="#cwAppF">App F: Crossword Puzzles</a>
+    <a href="#cwAppG">App G: Crossword Puzzles</a>
+    <a href="#cwAppH">App H: Crossword Puzzles</a>
+    <a href="../index.html">Back to Acct207</a>
+    <a href="https://maddiebytez.github.io/Maddie-Courses/">Back to Course Hub</a>
+  </div>
+
+  <!-- Main Content -->
+  
+  <div class="content">
+
+ 
+<div id="cw1_a" class="card crossword">
+  <h2>Ch 1: Crossword Puzzles, Part 1</h2>
+  <img class="crossword-img"
+       src="cw1_a_unsolved.png"
+       data-unsolved="cw1_a_unsolved.png"
+       data-solved="cw1_a_solved.png"
+       alt="Ch 1 Part 1 Crossword">
+
+  <button class="toggle-crossword">➡ Show Answer</button>
+  <div class="btn-group">
+    <a href="crosswords/cw1_a_unsolved.png" download class="download-link">Download Unsolved</a>
+    <a href="crosswords/cw1_a_solved.png" download class="download-link">Download Solved</a>
+  </div>
+</div>
+
+<div id="cw1_b" class="card">
+  <h2>Ch 1: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw2" class="card">
+  <h2>Ch 2: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw3" class="card">
+  <h2>Ch 3: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw4_a" class="card">
+  <h2>Ch 4: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw4_b" class="card">
+  <h2>Ch 4: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw5_a" class="card">
+  <h2>Ch 5: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw5_b" class="card">
+  <h2>Ch 5: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw6_a" class="card">
+  <h2>Ch 6: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw6_b" class="card">
+  <h2>Ch 6: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw7" class="card">
+  <h2>Ch 7: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw8_a" class="card">
+  <h2>Ch 8: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw8_b" class="card">
+  <h2>Ch 8: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw9_a" class="card">
+  <h2>Ch 9: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw9_b" class="card">
+  <h2>Ch 9: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw9_c" class="card">
+  <h2>Ch 9: Crossword Puzzles, Part 3</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw10_a" class="card">
+  <h2>Ch 10: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw10_b" class="card">
+  <h2>Ch 10: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw11_a" class="card">
+  <h2>Ch 11: Crossword Puzzles, Part 1</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw11_b" class="card">
+  <h2>Ch 11: Crossword Puzzles, Part 2</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw12" class="card">
+  <h2>Ch 12: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw13" class="card">
+  <h2>Ch 13: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw14" class="card">
+  <h2>Ch 14: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw15" class="card">
+  <h2>Ch 15: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw16" class="card">
+  <h2>Ch 16: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw17" class="card">
+  <h2>Ch 17: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw18" class="card">
+  <h2>Ch 18: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cw19" class="card">
+  <h2>Ch 19: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cwAppD" class="card">
+  <h2>App D: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cwAppE" class="card">
+  <h2>App E: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cwAppF" class="card">
+  <h2>App F: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cwAppG" class="card">
+  <h2>App G: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+<div id="cwAppH" class="card">
+  <h2>App H: Crossword Puzzles</h2>
+  <!-- Crossword code here -->
+</div>
+
+
+  
+
+
+        <div class="card nav-card">
+    <div class="nav-row">
+    <span>Homework:</span>
+    <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
+    </div>
+    <div class="nav-row"> 
+    <span>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+    </div>
+    <div class="nav-row"> 
+    <span>‎Quiz:</span>
+    <a href="../quizweek1/quizweek1.html">1</a><a href="../quizweek2/quizweek2.html">2</a><a href="../quizweek3/quizweek3.html">3</a><a href="../quizweek4/quizweek4.html">4</a><a href="../quizweek5/quizweek5.html">5</a><a href="../quizweek6/quizweek6.html">6</a><a href="../quizweek7/quizweek7.html">7</a><a href="../quizweek8/quizweek8.html">8</a>
+    </div>
+    </div>
+    
+    <div class="card footer-card">
+  <p>Custom portal layout © 2025 Maddie. Course content © DeVry / Wiley.</p>
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll(".card.crossword").forEach(card => {
+    const img = card.querySelector(".crossword-img");
+    const btn = card.querySelector(".toggle-crossword");
+
+    if (img && btn) {
+      let showingAnswers = false;
+      btn.addEventListener("click", () => {
+        if (showingAnswers) {
+          img.src = img.dataset.unsolved;
+          btn.textContent = "➡ Show Answers";
+        } else {
+          img.src = img.dataset.solved;
+          btn.textContent = "⬅ Back to Puzzle";
+        }
+        showingAnswers = !showingAnswers;
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
