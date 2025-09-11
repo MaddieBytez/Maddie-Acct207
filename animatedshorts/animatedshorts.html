@@ -13,7 +13,7 @@
     }
     /* Sidebar */
     .sidebar {
-      width: 220px;
+      width: 320px;
       background-color: #00ccff;
       padding: 20px;
       height: 100vh;
@@ -53,10 +53,49 @@
    border: 0;
   }
     .content {
-      margin-left: 240px;
+      margin-left: 350px;
       padding: 20px;
       flex-grow: 1;
     }
+.video-wrapper {
+  position: relative;
+  width: 1200px;
+  height: 675px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.video-wrapper:hover {
+  background: #222;
+}
+.video-thumb span {
+  background: rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.stop-video {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background: none;
+  color: black;    /* black text */
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.stop-video:hover {
+  background: rgba(0, 0, 0, 0.7); /* darker on hover */
+}
+
     .card {
       background: white;
       border-radius: 12px;
@@ -142,27 +181,24 @@
   <div id="as1" class="card"> 
   <h2>Chapter 3 - Accounting Animated Shorts: The Accounting Equation</h2> 
 
-  <iframe src="https://drive.google.com/file/d/1olEYXx1w2zC1LM8jgoU1VebztQ_rNuKQ/preview" 
-          width="1200" height="675" allow="autoplay"></iframe>
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1olEYXx1w2zC1LM8jgoU1VebztQ_rNuKQ/preview">▶ Play Video</div>
+</div>
 
-  </div>
 
   <div id="as2" class="card"> 
   <h2>Chapter 6 - Accounting Animated Shorts: Cost of Goods Sold</h2> 
 
-  <iframe src="https://drive.google.com/file/d/1jpz4YHRG_72IdRfmdzVxqFglG4N5YeqF/preview" 
-          width="1200" height="675" allow="autoplay"></iframe>
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1jpz4YHRG_72IdRfmdzVxqFglG4N5YeqF/preview">▶ Play Video</div>
+</div>
 
-  </div>
 
   <div id="as3" class="card"> 
   <h2>Chapter 9 - Accounting Animated Shorts: Payroll Deductions</h2> 
 
-  <iframe src="https://drive.google.com/file/d/1NYnwmIHBAoobXpQSNDM1s2kwpuqWwQuF/preview" 
-          width="1200" height="675" allow="autoplay"></iframe>
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1NYnwmIHBAoobXpQSNDM1s2kwpuqWwQuF/preview">▶ Play Video</div>
+</div>
 
-  </div>
-        <div class="card nav-card">
+          <div class="card nav-card">
     <div class="nav-row">
     <span>Homework:</span>
     <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
@@ -180,5 +216,30 @@
   <p>Custom portal layout © 2025 Maddie. Course content © DeVry / Wiley.</p>
     </div>
   </div>
+<script>
+document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+  wrapper.addEventListener('click', () => {
+    const src = wrapper.getAttribute('data-src');
+
+    // Replace wrapper with iframe when clicked
+    wrapper.innerHTML = `
+      <iframe src="${src}" width="1200" height="675" allow="autoplay"></iframe>
+      <button class="stop-video">✖</button>
+    `;
+
+    // Handle stop/unload button
+    wrapper.querySelector('.stop-video').addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent re-triggering play
+      wrapper.innerHTML = '▶ Play Video'; // reset to placeholder
+    });
+  });
+});
+</script>
 </body>
 </html>
+
+
+
+
+
+
