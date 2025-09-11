@@ -223,7 +223,7 @@ document.querySelectorAll('.video-wrapper').forEach(wrapper => {
 
     // Replace wrapper with iframe when clicked
     wrapper.innerHTML = `
-      <iframe src="${src}" width="1200" height="675" allow="autoplay"></iframe>
+      <iframe src="${src}" width="1200" height="675" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <button class="stop-video">✖</button>
     `;
 
@@ -237,6 +237,7 @@ document.querySelectorAll('.video-wrapper').forEach(wrapper => {
 </script>
 </body>
 </html>
+
 
 
 
