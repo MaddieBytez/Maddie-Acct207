@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acct207: Applied Skills Videos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #007a99;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 320px;
+      background-color: #00ccff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #007a99;
+      color: white;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    /* Content */
+
+    .slide-center {
+    display: flex;
+    justify-content: center;   /* center the iframe */
+   }
+
+   .slide-center iframe {
+   width: 85%;                /* a little smaller than the card */
+   max-width: 85%;          /* cap it on big screens */
+   aspect-ratio: 16 / 9;      /* auto height based on width */
+   border: 0;
+  }
+    .content {
+      margin-left: 350px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .card img {
+      display: block;
+      margin: 0 0 20px; /* left aligned, with space below */
+      max-width: 100%;  /* keep original size */
+      height: auto;
+      border-radius: 8px;
+    }
+    .nav-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-card span {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-card a {
+  text-decoration: none;
+  background: transparent; /* inactive buttons blend in */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 6px; /* add spacing between buttons */
+  transition: background 0.2s ease;
+}
+
+.nav-card a:hover {
+  background: rgba(0, 204, 255, 0.3); /* subtle hover for inactive */
+}
+
+.nav-card a.active {
+  background: #00ccff; /* bright blue for active */
+  color: black; /* better contrast */
+}
+
+.footer-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75); /* softer white */
+  margin: 0;
+  padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Applied Skills Videos</h2>
+	<a href="#asv1">How to Classify Accounts</a>
+	<a href="#asv2">Preparing a Statement of Cash Flows</a>
+	<a href="#asv3">Identify the Assumption or Principle That Has Been Violated</a>
+	<a href="#asv4">Identifying Accounting Assumptions, Principles and Constraints</a>
+	<a href="#asv5">How to Convert Earnings from Cash to Accrual Basis</a>
+	<a href="#asv6">Identifying Point of Revenue Recognition</a>
+	<a href="#asv7">How to Calculate Inventory and Cost of Goods Sold Using FIFO, Average-Cost, and LIFO in a Periodic Inventory System</a>
+	<a href="#asv8">How to Determine Straight-Line Depreciation for Partial Period</a>
+	<a href="#asv9">How to Prepare Horizontal and Vertical Analyses</a>
+	<a href="#asv10">How to Classify Manufacturing Costs into Different Categories and Compute the Unit Cost</a>
+	<a href="#asv11">How to Prepare a Cost of Goods Manufactured Schedule and Partial Financial Statements</a>
+	<a href="#asv12">How to Determine Fixed and Variable Costs Using the High-Low Method and Prepare a Graph</a>
+	<a href="#asv13">How to Prepare a CVP Income Statement, Compute Break-Even Point, Contribution Margin Ratio, Margin of Safety Ratio, and Sales for Target Net Income</a>
+	<a href="#asv14">How to Use Incremental Analysis Related to Make or Buy, and Consider Opportunity Cost</a>
+	<a href="#asv15">How to Use Incremental Analysis for Special Order and Identity Nonfinancial Factors in the Decision</a>
+	<a href="#asv16">How to Prepare a Budgeted Income Statement</a>
+	<a href="#asv17">How to Prepare a Cash Budget</a>
+	<a href="#asv18">How to Prepare a Direct Labor Budget</a>
+	<a href="#asv19">How to Prepare a Direct Materials Budget</a>
+	<a href="#asv20">How to Prepare a Manufacturing Overhead Budget</a>
+	<a href="#asv21">How to Prepare a Production Budget</a>
+	<a href="#asv22">How to Prepare a Sales Budget</a>
+	<a href="#asv23">How to Prepare a Selling and Administrative Expense Budget</a>
+	<a href="#asv24">How to Prepare Flexible Budget, Budget Report, and Graph for Manufacturing Overhead</a>
+	<a href="#asv25">How to Prepare Responsibility Report for a Profit Center</a>
+	<a href="#asv26">How to Prepare Responsibility Report for an Investment Center and Compute ROI</a>
+	<a href="#asv27">How to Compute Labor Cost and Labor Quantity Variances</a>
+	<a href="#asv28">How to Compute Overhead Variances</a>
+	<a href="#asv29">How to Prepare an Income Statement for Management</a>
+	<a href="#asv30">How to Compute Annual Rate of Return, Cash Payback Period, and Net Present Value</a>
+	<a href="#asv31">How to Compute Overhead Rates and Assign Overhead Using ABC</a>
+        <a href="../index.html">Back to Acct207</a>
+        <a href="https://maddiebytez.github.io/Maddie-Courses/">Back to Course Hub</a>
+  </div>
+
+  <!-- Main Content -->
+  
+  <div class="content">
+
+ 
+<!-- 1 -->
+<div id="asv1" class="card"> 
+  <h2>How to Classify Accounts</h2> 
+  <iframe src="https://drive.google.com/file/d/1XAYPuXzNxLQeJvPreCWRtJsKYQMsTsqP/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 2 -->
+<div id="asv2" class="card"> 
+  <h2>Preparing a Statement of Cash Flows</h2> 
+  <iframe src="https://drive.google.com/file/d/1DyWLnbRJuMfLc99gtdTJKxbj_a1N4Yar/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 3 -->
+<div id="asv3" class="card"> 
+  <h2>Identify the Assumption or Principle That Has Been Violated</h2> 
+  <iframe src="https://drive.google.com/file/d/1VGEbzgUHCd9vN9fwCV_rLHxK-v6UnL6p/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 4 -->
+<div id="asv4" class="card"> 
+  <h2>Identifying Accounting Assumptions, Principles and Constraints</h2> 
+  <iframe src="https://drive.google.com/file/d/1TmrX5cW7xCSjNkkTfpVbpPMP48Gi5UeN/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 5 -->
+<div id="asv5" class="card"> 
+  <h2>How to Convert Earnings from Cash to Accrual Basis</h2> 
+  <iframe src="https://drive.google.com/file/d/1o1tt5b-yRr9xREdVrzYglSR7WMtZx4BS/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 6 -->
+<div id="asv6" class="card"> 
+  <h2>Identifying Point of Revenue Recognition</h2> 
+  <iframe src="https://drive.google.com/file/d/1D7nG03b1gr1QEAPjurzqhjUjqPphuqx_/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 7 -->
+<div id="asv7" class="card"> 
+  <h2>How to Calculate Inventory and Cost of Goods Sold Using FIFO, Average-Cost, and LIFO in a Periodic Inventory System</h2> 
+  <iframe src="https://drive.google.com/file/d/1MTLX-V4u1Ombhw45fW49Q1fD0BtOX0Mj/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 8 -->
+<div id="asv8" class="card"> 
+  <h2>How to Determine Straight-Line Depreciation for Partial Period</h2> 
+  <iframe src="https://drive.google.com/file/d/1jaxMwk_V1NEa54VoBTu-F06AlOb9O1K9/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 9 -->
+<div id="asv9" class="card"> 
+  <h2>How to Prepare Horizontal and Vertical Analyses</h2> 
+  <iframe src="https://drive.google.com/file/d/16cls_M6cyGIHL00YdQIaTGaroEAD6Yrw/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 10 -->
+<div id="asv10" class="card"> 
+  <h2>How to Classify Manufacturing Costs into Different Categories and Compute the Unit Cost</h2> 
+  <iframe src="https://drive.google.com/file/d/1D6tNvLe5Ya3DxO7ssBBnxxJkZ9rAUtP9/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 11 -->
+<div id="asv11" class="card"> 
+  <h2>How to Prepare a Cost of Goods Manufactured Schedule and Partial Financial Statements</h2> 
+  <iframe src="https://drive.google.com/file/d/1-D6F3Om4k7nY9HkHLp98_DpiMEU8OrCB/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 12 -->
+<div id="asv12" class="card"> 
+  <h2>How to Determine Fixed and Variable Costs Using the High-Low Method and Prepare a Graph</h2> 
+  <iframe src="https://drive.google.com/file/d/16-8hboPZ-Ami599yfR4OLcupnfGFgleW/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 13 -->
+<div id="asv13" class="card"> 
+  <h2>How to Prepare a CVP Income Statement, Compute Break-Even Point, Contribution Margin Ratio, Margin of Safety Ratio, and Sales for Target Net Income</h2> 
+  <iframe src="https://drive.google.com/file/d/1sDrJsaMZdN1zeYnAs_RffOnMLO1aqWHS/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 14 -->
+<div id="asv14" class="card"> 
+  <h2>How to Use Incremental Analysis Related to Make or Buy, and Consider Opportunity Cost</h2> 
+  <iframe src="https://drive.google.com/file/d/1Ak0D3ArJ8XFbT6Qp1rnZ0vYMmmN5cb1y/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 15 -->
+<div id="asv15" class="card"> 
+  <h2>How to Use Incremental Analysis for Special Order and Identity Nonfinancial Factors in the Decision</h2> 
+  <iframe src="https://drive.google.com/file/d/1dRxO5n9YQ9f8--PoBxgXMm3qRC3OiC3u/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 16 -->
+<div id="asv16" class="card"> 
+  <h2>How to Prepare a Budgeted Income Statement</h2> 
+  <iframe src="https://drive.google.com/file/d/1DBWCLmhSDGjMSBo2QwloHSxRhtihuXte/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 17 -->
+<div id="asv17" class="card"> 
+  <h2>How to Prepare a Cash Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/1q0_gq8uveY5P8QvFiTPjCf8HDFAc1dic/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 18 -->
+<div id="asv18" class="card"> 
+  <h2>How to Prepare a Direct Labor Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/12ISoxtkbCadbSI442_c0TOEqbDen7Sft/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 19 -->
+<div id="asv19" class="card"> 
+  <h2>How to Prepare a Direct Materials Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/1FGTKJNNaoAlbmtEMt55cNHP1knlsbsWa/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 20 -->
+<div id="asv20" class="card"> 
+  <h2>How to Prepare a Manufacturing Overhead Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/1fGgBxLr95Yws3h1Cz_Qk3RABRn7xrxea/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 21 -->
+<div id="asv21" class="card"> 
+  <h2>How to Prepare a Production Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/1kLUwvgUUyEbTtW_K1_prDDbUkVKlO06V/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 22 -->
+<div id="asv22" class="card"> 
+  <h2>How to Prepare a Sales Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/1HpoBM7VjKZEMMg78i4PyzUvb81xM0Ic3/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 23 -->
+<div id="asv23" class="card"> 
+  <h2>How to Prepare a Selling and Administrative Expense Budget</h2> 
+  <iframe src="https://drive.google.com/file/d/1sNoS_HHS6bWYrwg8o0mVEJmjJkmRrxPv/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 24 -->
+<div id="asv24" class="card"> 
+  <h2>How to Prepare Flexible Budget, Budget Report, and Graph for Manufacturing Overhead</h2> 
+  <iframe src="https://drive.google.com/file/d/1ClOoRwey74ZT1L2JWIGEYvCoJhCdAJ_8/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 25 -->
+<div id="asv25" class="card"> 
+  <h2>How to Prepare Responsibility Report for a Profit Center</h2> 
+  <iframe src="https://drive.google.com/file/d/1tdwR75gQEZzdl5eAwtPW5C6mYucU5REM/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 26 -->
+<div id="asv26" class="card"> 
+  <h2>How to Prepare Responsibility Report for an Investment Center and Compute ROI</h2> 
+  <iframe src="https://drive.google.com/file/d/1Ul9shwmijWYmsoL9AT-ePn-jnxe3Qfkk/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 27 -->
+<div id="asv27" class="card"> 
+  <h2>How to Compute Labor Cost and Labor Quantity Variances</h2> 
+  <iframe src="https://drive.google.com/file/d/1L4ZuSLuhCy-Gcefcd76QvTimTKZrelPn/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 28 -->
+<div id="asv28" class="card"> 
+  <h2>How to Compute Overhead Variances</h2> 
+  <iframe src="https://drive.google.com/file/d/1rHyjPWLZcSIdDZUm9GJTuU1D-GSoy0c-/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 29 -->
+<div id="asv29" class="card"> 
+  <h2>How to Prepare an Income Statement for Management</h2> 
+  <iframe src="https://drive.google.com/file/d/1IgrBqsa9Tqk2b4ATPfz513vxxNU5R7q-/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 30 -->
+<div id="asv30" class="card"> 
+  <h2>How to Compute Annual Rate of Return, Cash Payback Period, and Net Present Value</h2> 
+  <iframe src="https://drive.google.com/file/d/1OfEDHJxSWLK4ibTTMpky_EN9eHssgM4V/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+<!-- 31 -->
+<div id="asv31" class="card"> 
+  <h2>How to Compute Overhead Rates and Assign Overhead Using ABC</h2> 
+  <iframe src="https://drive.google.com/file/d/1yqwcFAnlJlQB38RSEz3_W7qW2E5aUOP4/preview" width="1200" height="675" allow="autoplay"></iframe>
+</div>
+
+
+
+        <div class="card nav-card">
+    <div class="nav-row">
+    <span>Homework:</span>
+    <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
+    </div>
+    <div class="nav-row"> 
+    <span>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+    </div>
+    <div class="nav-row"> 
+    <span>‎Quiz:</span>
+    <a href="../quizweek1/quizweek1.html">1</a><a href="../quizweek2/quizweek2.html">2</a><a href="../quizweek3/quizweek3.html">3</a><a href="../quizweek4/quizweek4.html">4</a><a href="../quizweek5/quizweek5.html">5</a><a href="../quizweek6/quizweek6.html">6</a><a href="../quizweek7/quizweek7.html">7</a><a href="../quizweek8/quizweek8.html">8</a>
+    </div>
+    </div>
+    
+    <div class="card footer-card">
+  <p>Custom portal layout © 2025 Maddie. Course content © DeVry / Wiley.</p>
+    </div>
+  </div>
+</body>
+</html>
