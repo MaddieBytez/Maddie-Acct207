@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Acct207: Ask An Expert Videos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #007a99;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 320px;
+      background-color: #00ccff;
+      padding: 20px;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .sidebar a:hover {
+      background-color: #007a99;
+      color: white;
+      padding-left: 5px;
+      border-radius: 5px;
+    }
+    /* Content */
+
+    .slide-center {
+    display: flex;
+    justify-content: center;   /* center the iframe */
+   }
+
+   .slide-center iframe {
+   width: 85%;                /* a little smaller than the card */
+   max-width: 85%;          /* cap it on big screens */
+   aspect-ratio: 16 / 9;      /* auto height based on width */
+   border: 0;
+  }
+    .content {
+      margin-left: 350px;
+      padding: 20px;
+      flex-grow: 1;
+    }
+.video-wrapper {
+  position: relative;
+  width: 1200px;
+  height: 675px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.video-wrapper:hover {
+  background: #222;
+}
+.video-thumb span {
+  background: rgba(0,0,0,0.6);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.stop-video {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background: none;
+  color: black;    /* black text */
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.stop-video:hover {
+  background: rgba(0, 0, 0, 0.7); /* darker on hover */
+}
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+    .card img {
+      display: block;
+      margin: 0 0 20px; /* left aligned, with space below */
+      max-width: 100%;  /* keep original size */
+      height: auto;
+      border-radius: 8px;
+    }
+    .nav-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-card span {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-card a {
+  text-decoration: none;
+  background: transparent; /* inactive buttons blend in */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 6px; /* add spacing between buttons */
+  transition: background 0.2s ease;
+}
+
+.nav-card a:hover {
+  background: rgba(0, 204, 255, 0.3); /* subtle hover for inactive */
+}
+
+.nav-card a.active {
+  background: #00ccff; /* bright blue for active */
+  color: black; /* better contrast */
+}
+
+.footer-card {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.footer-card p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75); /* softer white */
+  margin: 0;
+  padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Ask An Expert Videos</h2>
+    <a href="#aae1">Data Analytics and Decision Making</a>
+    <a href="#aae2">External Reporting and Internal Decision Making</a>
+    <a href="#aae3">Importance of Learning Accounting</a>
+    <a href="#aae4">Revenue Recognition Issues</a>
+    <a href="#aae5">Unearned Revenues</a>
+    <a href="#aae6">Internal Controls and Cash</a>
+    <a href="#aae7">Analyzing Receivables</a>
+    <a href="#aae8">Effective Budgeting</a>
+    <a href="#aae9">Capital Budgeting</a>
+    <a href="../index.html">Back to Acct207</a>
+    <a href="https://maddiebytez.github.io/Maddie-Courses/">Back to Course Hub</a>
+  </div>
+
+  <!-- Main Content -->
+  
+  <div class="content">
+
+ 
+  <div id="aae1" class="card"> 
+  <h2>Data Analytics and Decision Making</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1-q6TwnLY-dXcuHAhpeh3PzvM3FPd7fQ0/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae2" class="card"> 
+  <h2>External Reporting and Internal Decision Making</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1knHxJ_25iOWJ8VLnrF3tRCzjd5aRAwTC/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae3" class="card"> 
+  <h2>Importance of Learning Accounting</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1q4bF-5UoMoyum-pmDXZkibsxQY2XMoAc/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae4" class="card"> 
+  <h2>Revenue Recognition Issues</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/14VsMREoFh-hwou1omy6o_P07KKB8snve/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae5" class="card"> 
+  <h2>Unearned Revenues</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1ChIT0vSumKqrRKKWxBnmmInTwfHukAVl/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae6" class="card"> 
+  <h2>Internal Controls and Cash</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/13fUTAf02PxY6Js4j5SKxA4bx25eSc90W/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae7" class="card"> 
+  <h2>Analyzing Receivables</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/17I835j0NHNoJW3B2zT5zC2vBOQj_Yof5/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae8" class="card"> 
+  <h2>Effective Budgeting</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1AGwEGu45cvyl8KPvNk3TaQ6qGXs6uZZr/preview">▶ Play Video</div>
+</div>
+ 
+  <div id="aae9" class="card"> 
+  <h2>Capital Budgeting</h2> 
+
+  <div class="video-wrapper" data-src="https://drive.google.com/file/d/1nke2F721PbGb8E_sHCZff5qiks6-Ltun/preview">▶ Play Video</div>
+</div>
+
+
+
+          <div class="card nav-card">
+    <div class="nav-row">
+    <span>Homework:</span>
+    <a href="../homeworkweek1/homeworkweek1.html">1</a><a href="../homeworkweek2/homeworkweek2.html">2</a><a href="../homeworkweek3/homeworkweek3.html">3</a><a href="../homeworkweek4/homeworkweek4.html">4</a><a href="../homeworkweek5/homeworkweek5.html">5</a><a href="../homeworkweek6/homeworkweek6.html">6</a><a href="../homeworkweek7/homeworkweek7.html">7</a><a href="../homeworkweek8/homeworkweek8.html">8</a>
+    </div>
+    <div class="nav-row"> 
+    <span>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </span>
+    </div>
+    <div class="nav-row"> 
+    <span>‎Quiz:</span>
+    <a href="../quizweek1/quizweek1.html">1</a><a href="../quizweek2/quizweek2.html">2</a><a href="../quizweek3/quizweek3.html">3</a><a href="../quizweek4/quizweek4.html">4</a><a href="../quizweek5/quizweek5.html">5</a><a href="../quizweek6/quizweek6.html">6</a><a href="../quizweek7/quizweek7.html">7</a><a href="../quizweek8/quizweek8.html">8</a>
+    </div>
+    </div>
+    
+    <div class="card footer-card">
+  <p>Custom portal layout © 2025 Maddie. Course content © DeVry / Wiley.</p>
+    </div>
+  </div>
+<script>
+document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+  wrapper.addEventListener('click', () => {
+    const src = wrapper.getAttribute('data-src');
+
+    // Replace wrapper with iframe when clicked
+    wrapper.innerHTML = `
+      <iframe src="${src}" width="1200" height="675" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <button class="stop-video">✖</button>
+    `;
+
+    // Handle stop/unload button
+    wrapper.querySelector('.stop-video').addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent re-triggering play
+      wrapper.innerHTML = '▶ Play Video'; // reset to placeholder
+    });
+  });
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
